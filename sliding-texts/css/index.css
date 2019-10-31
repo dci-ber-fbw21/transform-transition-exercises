@@ -1,0 +1,61 @@
+html{
+    font-size: 62.5%;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.5rem;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+section{
+    width: 400px;
+    height: 400px;
+    background-image: url(https:picsum.photos/400);
+    overflow: hidden;
+}
+section *{
+    text-shadow: 1px 1px 5px black,
+    padding: 10px;
+}
+h1{
+    color: black;
+}
+.p1{
+    transform: translateX(-100%);
+    transition: all linear 0.3s;
+    transform-origin: top;
+}
+
+.p2{
+    transform: translateX(-100%);
+    transition: all linear 0.7s;
+    transform-origin: top;
+}
+
+.p3{
+    transform: translateX(-100%);
+    transition: all linear 1.1s;
+    transform-origin: top;
+}
+
+section:hover .p1{
+    transform: translateX(0%);
+   
+}
+section:hover .p2{
+    transform: translateX(0%);
+   
+}
+section:hover .p3{
+    transform: translateX(0%);
+    
+}
