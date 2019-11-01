@@ -6,6 +6,7 @@ html{
     box-sizing: border-box;
     font-family: 'Comfortaa', cursive;
     font-size: 1.5rem;
+    color: white;
 }
 main{
     display: flex;
@@ -17,97 +18,54 @@ main{
 }
 section{
     display: flex;
-    height: 60%;
-    max-width: 100%;
+    height: 50vh;
+    width: 100%;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;  
 }
 
 div{
 width: calc(100%/6);
 transition: all 0.1s linear ; 
-filter: grayscale(100%);  
- 
+font-size: 0;
+margin: 0px 5px;
+height: 100%;
+opacity: 0.3;
+overflow: hidden;
+
 }
 div > img{
     width: 100%;
-    height: 600px;
+    height: 100%;
     object-fit: cover;
-    transition: all 0.1s linear ; 
-}
-
-.img1:hover {
-    flex-grow: 1;
-    flex-shrink: 0;
-    flex-basis: calc(100%/2.5);
-    box-shadow: 0px 0px 10px white,
-    0px 0px 5px white,
-    0px 0px 15px white,
-    0px 0px 20px white;
-    z-index: 100;
-    filter: none;
-}
-
-.img2:hover {
-    flex-grow: 2;
-    flex-shrink: 0;
-    flex-basis: calc(100%/2.5);
-    box-shadow: 0px 0px 10px white,
-    0px 0px 5px white,
-    0px 0px 15px white,
-    0px 0px 20px white;
-    z-index: 100;
-    filter: none;
-}
-
-.img3:hover {
+    transition: all 0.2s linear ;
+    border-radius: 50px; 
     
-    flex-shrink: 0;
-    flex-basis: calc(100%/2.5);
-    box-shadow: 0px 0px 10px white,
-    0px 0px 5px white,
-    0px 0px 15px white,
-    0px 0px 20px white;
-    z-index: 100;
-    filter: none;
 }
 
-.img4:hover {
-    flex-grow: 2;
+div:nth-child(n):hover {
     flex-shrink: 0;
-    flex-basis: calc(100%/2.5);
     box-shadow: 0px 0px 10px white,
     0px 0px 5px white,
     0px 0px 15px white,
     0px 0px 20px white;
-    z-index: 100;
     filter: none;
+    border-radius: 50px;
+    height: 150%;
+    width: 55%;
+    opacity: 1;
 }
-.img5:hover {
-    flex-grow: 2;
-    flex-shrink: 0;
-    flex-basis: calc(100%/2.5);
-    box-shadow: 0px 0px 10px white,
-    0px 0px 5px white,
-    0px 0px 15px white,
-    0px 0px 20px white;
-    z-index: 100;
-    filter: none;
+p{
+    transition: all 0.2s linear;
+    padding: 12px;
+    height: 7rem;
+    font-size: 2rem;
+    background-color: rgba(0,0,0,0.7);
 }
-
-.img6:hover {
-    flex-grow: 2;
-    flex-shrink: 0;
-    flex-basis: calc(100%/2.5);
-    box-shadow: 0px 0px 10px white,
-    0px 0px 5px white,
-    0px 0px 15px white,
-    0px 0px 20px white;
-    z-index: 100;
-    filter: none;
-}
-
-div:hover img{
-    height: 700px;
+div:nth-child(n):hover p {
+    transform: translateY(-120px);
+    
+    
+    
+    
 }
